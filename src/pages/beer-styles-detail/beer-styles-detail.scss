@@ -1,0 +1,147 @@
+page-beer-styles-detail {
+
+  p {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+   .col{
+    padding: 0;
+  }
+
+  .img-glass {
+    margin-top: 30px;
+  }
+  .glass-name {
+
+    margin-left: -10px;
+    color: color($colors, background);
+  }
+
+  .bjcp-container {
+
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    margin-left: -20px;
+    text-align: center;
+    p {
+      margin: 0px 0;
+      color: color($colors, background);
+    }
+  }
+
+  .separate-line {
+    height: 0.15vh;
+    margin: 20px auto;
+    padding: 0 20px;
+    width: 85%;
+    background-color: color($colors, primary);
+  }
+
+  .desc-container{
+    margin-right: 15px;
+  }
+
+  .desc {
+    text-indent: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /*! autoprefixer: on */
+    -webkit-line-clamp: 7;
+    position: relative;
+    margin-bottom: 0;
+
+  }
+
+  .desc-read-more {
+
+    -webkit-line-clamp: inherit;
+  }
+  .btn-read-more {
+    font-size: 13px;
+    padding-left: 0;
+  }
+
+  .middle-container {
+
+    text-align: center;
+    p {
+      font-weight: 200;
+      margin: 5px 0;
+      font-size: 13px;
+    }
+    .range {
+      color: color($colors, background);
+      margin: -10px;
+      font-size: 12px;
+
+    }
+
+    .img-range {
+      display: block;
+      margin: auto;
+    }
+
+  }
+
+  .gradient {
+    height: 100px;
+    background: url('../assets/icon/gradiente.png') no-repeat center center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+  }
+  .select-gradient {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -3px;
+    border-radius: 30px;
+    border: 5px solid white;
+    position: absolute;
+    top: 0;
+    height: 118%;
+    z-index: 1;
+  }
+
+  .ibu-exp {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    color: color($colors, background);
+    font-weight: 300;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .row-srm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .srm1, .srm2 {
+    position: absolute;
+    color: color($colors, background);
+
+  }
+
+  .srm-numbers {
+    margin: 10px auto;
+    text-align: left;
+    width: 88%;
+  }
+
+}

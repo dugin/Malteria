@@ -1,0 +1,92 @@
+<!--
+  Generated template for the BeerProducer page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar class="nav-container">
+    <div class="logo-title" [style.margin-top]="isIOS? '6px': '12px'">
+      <img class="logo-icon" src="assets/icon/favicon.ico" height="24px" />
+      <span class="title">ArteBier </span>
+    </div>
+    <button class="menu" ion-button icon-only clear>
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    <div class="search_container">
+      <ion-searchbar color="accent" autofocus [debounce]="600" placeholder="Procurar por produtor">
+      </ion-searchbar>
+    </div>
+  </ion-navbar>
+</ion-header>
+<ion-content class="content">
+
+
+   <ion-card (click)='onProducer()' >
+  
+    <div class="layer">
+      </div>
+       <img src="assets/img/producer/colorado.png"/>
+
+         <div class="producer">Colorado</div>
+
+        <span class="country"> BRA </span>
+        <img class="country-icon" width="48"  src="assets/img/flags/flag_brasil.png"/>
+       
+     <span class="foundation"> 2012 </span>
+             <img class="foundation-icon" width="48"  src="assets/icon/foundation.svg"/>
+
+   
+    <span class="city">Ribeirão Preto / SP </span>
+                 <img class="city-icon" width="48"  src="assets/icon/keg.svg"/>
+
+  
+  </ion-card>
+
+   <ion-card (click)='onProducer()' >
+  
+    <div class="layer">
+      </div>
+       <img src="assets/img/producer/wkattz.jpg"/>
+
+         <div class="producer">W*Kattz</div>
+
+        <span class="country"> BRA </span>
+        <img class="country-icon" width="48"  src="assets/img/flags/flag_brasil.png"/>
+       
+     <span class="foundation"> 2014 </span>
+             <img class="foundation-icon" width="48"  src="assets/icon/foundation.svg"/>
+
+   
+    <span class="city">Nova Friburgo / RJ </span>
+                 <img class="city-icon" width="48"  src="assets/icon/keg.svg"/>
+
+  
+  </ion-card>
+
+   <ion-card >
+  
+    <div class="layer">
+      </div>
+       <img src="assets/img/producer/dual.png"/>
+
+         <div class="producer">Dual</div>
+
+        <span class="country"> BRA </span>
+        <img class="country-icon" width="48"  src="assets/img/flags/flag_brasil.png"/>
+       
+     <span class="foundation"> 2015 </span>
+             <img class="foundation-icon" width="48"  src="assets/icon/foundation.svg"/>
+
+   
+    <span class="city">Nova Friburgo / RJ </span>
+                 <img class="city-icon" width="48"  src="assets/icon/keg.svg"/>
+
+  
+  </ion-card>
+
+
+
+
+
+</ion-content>

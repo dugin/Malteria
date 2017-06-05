@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="16px" viewBox="0 0 65 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>range 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="range" fill="#833D31">
+            <path d="M0,11.05 L64.5,11.05 L64.5,14 L31.8606891,14 L30.5096501,14 L0,14 L0,11.05 Z" id="Rectangle-path" transform="translate(32.250000, 12.525000) scale(1, -1) translate(-32.250000, -12.525000) "></path>
+            <polygon id="Shape" points="15 5.05 15 15.75 19.75 15.75 19.75 0.85 19.0923077 1.55"></polygon>
+            <polygon id="Shape" points="45.8346154 1.75 50 5.25 50 15.95 45.25 15.95 45.25 1.05"></polygon>
+            <rect id="Rectangle-path" x="19.75" y="9.95" width="25.9" height="2.95"></rect>
+        </g>
+    </g>
+</svg>

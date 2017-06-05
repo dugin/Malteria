@@ -1,0 +1,61 @@
+page-beer-styles {
+
+  .nav-container {
+
+    .logo-title {
+      margin-top: 12px;
+    }
+
+    .search_container {
+      margin-top: 10px;
+    }
+  }
+
+  .label-ios, .label-md {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+  }
+
+  .arrow {
+    float: right;
+    color: black;
+  }
+  .item-ios {
+    padding: 0;
+  }
+
+  .item-container {
+
+    padding: 0 0 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: space-between;
+    background-color: color($colors, background2);
+
+  }
+
+  .item-letter {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .item-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

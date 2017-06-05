@@ -1,0 +1,125 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #fff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  background: #833d31,
+  background-lighter: #9b635a,
+  accent:     #f4d207,
+  background2: #f2ebea
+);
+
+$beer : (
+
+   #F8F753,
+   #F6F513,
+   #ECE61A,
+   #D5BC26,
+   #BF923B,
+   #BF813A,
+   #BC6733,
+   #8D4C32,
+   #5D341A,
+   #261716,
+   #0F0B0A,
+   #080707,
+   #030403,
+);
+
+$toolbar-background: color($colors, background);
+
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$font-family-ios-base: 'Raleway', sans-serif;
+
+$select-ios-icon-color: 		color($colors, accent);
+
+
+
+
+$searchbar-ios-input-search-icon-color: color($colors, background);
+
+
+
+$searchbar-ios-input-clear-icon-color: color($colors, background);
+
+$searchbar-ios-toolbar-input-background: color($colors, primary);
+
+$searchbar-ios-input-text-color	: color($colors, background);
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+//color of input
+$text-input-md-highlight-color: color($colors, accent);
+$text-input-md-highlight-color-valid : 	color($colors, accent);
+
+//color of select
+$select-md-icon-color: 	color($colors, accent);
+
+
+$searchbar-md-input-clear-icon-color: color($colors, background);
+
+// color of inactive tab icon
+$tabs-md-tab-color: #9b635a;
+
+
+
+$font-family-md-base: 'Raleway', sans-serif;
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+$ionicons-font-path: "../assets/fonts";
+@import "ionic.ionicons";

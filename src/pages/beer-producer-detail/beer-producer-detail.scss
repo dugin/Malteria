@@ -1,0 +1,135 @@
+page-beer-producer-detail {
+
+  ion-grid{
+    padding-bottom: 0;
+  }
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  .header-image {
+    height: 30vh;
+  }
+  .main-content {
+    z-index: -1;
+  }
+
+  .btn-back-navigation{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0%;
+
+
+  }
+
+  .btn-forward-gallery{
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+
+  .btn-back-gallery{
+ z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 10%;
+
+  }
+
+  .slide-image {
+    height: 30vh;
+    width: 100%;
+  }
+  .avatar-container {
+    position: relative;
+    top: -25%;
+    left: 5%;
+    z-index: 100;
+  }
+  .avatar {
+    border-radius: 50%;
+  }
+  .top-row {
+    margin: -5px 0 0 20px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+      color: color($colors, background);
+    }
+    div {
+      margin: -5px 0 0 -5px;
+      button {
+        margin-right: -15px;
+      }
+    }
+  }
+  .separate-line {
+    height: 0.15vh;
+    margin: 20px auto;
+    width: 100%;
+    background-color: color($colors, primary);
+  }
+
+  .top-mid-container {
+    margin: 0 10px 0 10px;
+    .column {
+      text-align: center;
+      div {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+  .desc-container {
+    margin: 20px 0;
+  }
+  .desc-title {
+    margin: 0 15px;
+    color: color($colors, background);
+  }
+  .desc {
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .btn-read-more {
+    font-size: 13px;
+    margin: -5px 0 0 3px;
+  }
+  .prizes-container {
+    margin: 0 -20px;
+    padding: 0 20px 20px 20px;
+  }
+  .prizes-title {
+    margin: 0 0 10px 15px;
+    color: color($colors, background);
+  }
+  .btn-back-prize {
+    align-self: center;
+    margin-left: -20px;
+  }
+  .btn-forward-prize {
+    align-self: center;
+    margin-right: -20px;
+  }
+  .label-container {
+    background-color: rgba(131, 61, 49, .7);
+    margin: 0 -20px;
+    padding: 20px;
+    div {
+      color: color($colors, primary);
+    }
+  }
+  .label-title {
+    margin: 0 0 10px 15px;
+    color: color($colors, primary);
+  }
+
+}

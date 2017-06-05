@@ -1,0 +1,117 @@
+page-producer-beer {
+
+    .grid{
+        padding: 5px 15px;
+    }
+
+    .type-p{
+        color: color($colors, background);
+
+        span{
+             color: rgba(0,0,0,0.7); 
+        }
+      
+    }
+    .style{
+         color: color($colors, background);
+         span{
+              color: rgba(0,0,0,0.7); 
+             font-weight: 600;
+             text-decoration: underline;
+         }
+    }
+
+    .line{
+        width: 100%;
+        background-color: white;
+        margin: 15px 0;
+    }
+
+    .desc{
+        margin: 0;
+        color: rgba(0,0,0,0.7);
+            font-weight: 100;
+    font-size: 13px;
+
+       display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 10.0em;
+  line-height: 1.3em;
+
+        text-align: justify;
+    text-justify: inter-word;
+    }
+    .btn-read-more{
+        font-size: 13px;
+        margin-top: -10px;
+        padding: 0;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-p{
+        margin-top:10px;
+        text-align: center;
+        font-size: 12px;
+           font-weight: 200;
+           color: color($colors, background);
+
+          span{
+              margin-top: 15px;
+               color: rgba(0,0,0,0.7);
+             
+               font-weight: 500;
+          }
+
+    }
+
+    .arrow{
+        position: relative;
+        left: 40%;
+
+    }
+
+      .prizes-container {
+    margin: 0 -20px;
+    padding: 0 20px 20px 20px;
+  }
+  .prizes-title {
+    margin: 0 0 10px 15px;
+    color: color($colors, background);
+  }
+  .btn-back-prize {
+    align-self: center;
+    margin-left: -20px;
+  }
+  .btn-forward-prize {
+    align-self: center;
+    margin-right: -20px;
+  }
+  .label-container {
+    background-color: rgba(131, 61, 49, .7);
+    margin: 0 -20px;
+    padding: 20px;
+    div {
+      color: color($colors, primary);
+    }
+  }
+  .label-title {
+    margin: 0 0 10px 15px;
+    color: color($colors, primary);
+  }
+
+  .prize-name{
+      text-align: center;
+      margin-top: 8px;
+      font-size: 11px;
+       font-weight: 200;
+           color: rgba(0,0,0,0.7);
+  }
+
+}

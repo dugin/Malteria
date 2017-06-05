@@ -1,0 +1,88 @@
+<!--
+  Generated template for the BeerStyles page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+  <ion-navbar class="nav-container">
+
+    <div class="logo-title">
+      <img class="logo-icon" src="assets/logo/beer-logo.svg" height="26px" width="auto"/>
+      <img class="logo-icon" src="assets/logo/writing-logo.svg" height="12px" width="auto"/>
+    </div>
+
+
+    <div class="search_container">
+      <ion-searchbar  [(ngModel)]="searchInput" (ionCancel)="onSearchCancel($event)" (ionInput)="getStylesFromSearch($event)"
+                     color="accent" [debounce]="600" [showCancelButton]="true" placeholder="Procurar por estilo">
+      </ion-searchbar>
+    </div>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content class="content">
+
+  <div class="spinner">
+    <ion-spinner name="crescent" *ngIf="isLoading"></ion-spinner>
+
+  </div>
+
+  <div *ngIf="!isLoading">
+
+    <ion-list *ngIf="isSearching">
+      <div *ngFor="let item of allStyles, let i= index">
+        <button (click)="onStyleSelected(item)" ion-item detail-none class="category-container" color="primary">
+          <span class="category-number">{{item.numberBJCP}}{{item.numberStyle}}</span>
+          <span class="category-title">{{capitalizeWord(item.style)}} </span>
+          <button class="arrow" clear ion-button icon-only>
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </button>
+        </button>
+      </div>
+    </ion-list>
+
+
+    <ion-list *ngIf="showSubCategory && !isSearching">
+
+      <div *ngFor="let item of showSubCategory, let i= index">
+
+        <button (click)="onSubCategory(i)" ion-item detail-none class="category-container" color="primary">
+          <span class="category-number">{{i+1}}</span>
+          <span class="category-title">
+            {{stylesStruct[i+1][0].category.localeCompare('IPA') === 0?stylesStruct[i+1][0].category : capitalizeWord(stylesStruct[i+1][0].category)}}
+          </span>
+
+          <button class="arrow" clear ion-button icon-only>
+            <ion-icon [name]=item></ion-icon>
+          </button>
+
+        </button>
+
+        <div *ngIf="showSubCategory[i].localeCompare('ios-arrow-up') == 0">
+          <button (click)="onStyleSelected(style)" *ngFor="let style of stylesStruct[i+1]" ion-item detail-none
+                  class="item-container">
+            <span class="item-letter">{{style.numberStyle}}</span>
+            <span class="item-title">  {{style.style}} </span>
+            <button class="arrow" clear ion-button icon-only>
+              <ion-icon name="ios-arrow-forward"></ion-icon>
+            </button>
+          </button>
+
+
+        </div>
+
+
+      </div>
+
+
+    </ion-list>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,57 @@
+.tabs {
+
+  .tabbar{
+    background: color($colors,background);
+  }
+  
+
+    .ion-md-producer_icon {
+    
+    
+content: url("../assets/icon/beer_crate.svg");
+
+   height: 24px;
+   margin-bottom:5px; 
+  opacity: .4;
+  color: #9b635a;
+  
+ 
+}
+
+ .ion-ios-producer_icon {
+     
+content: url("../assets/icon/beer_crate1.svg");
+   height: 28px;
+
+}
+
+ .ion-ios-producer_icon-outline {
+ content: url("../assets/icon/beer_crate_outline.svg");
+  height: 28px;
+ 
+ }
+
+
+  
+}
+
+ .tabs-md .tab-button-icon{
+   color : #9b635a;
+    }
+
+    .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+       color : #9b635a;
+    }
+
+    .tabs-md .tab-button[aria-selected=true] .tab-button-text{
+      color: white;
+    }
+
+
+.tabs-md .tab-button[aria-selected=true]{
+    .ion-md-producer_icon{
+      opacity: 1;
+
+ }
+
+}

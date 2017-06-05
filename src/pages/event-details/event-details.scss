@@ -1,0 +1,143 @@
+page-event-details {
+  .toolbar-container {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+  }
+  ion-content {
+    margin-top: -64px;
+    height: calc(100% + 64px);
+  }
+  h5 {
+    color: color($colors, background);
+    font-size: 16px;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.7)
+  }
+  .main-container {
+    margin: 0 15px;
+  }
+  .banner-container {
+    margin-top: 60px;
+
+
+    height: 30%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  a[disabled],
+  button[disabled],
+  [ion-button][disabled] {
+    opacity: 1;
+  }
+  .top-container,
+  .info-container,
+  .producer-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info-container {
+    margin: 15px 0;
+  }
+  .top-container {
+    text-align: center;
+  }
+  .top-container span {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7)
+  }
+  .date {
+    text-align: center;
+    margin-right: 15px;
+    p {
+      margin-top: -5px;
+      color: color($colors, background);
+      font-size: 2.0rem;
+    }
+    h4 {
+      font-size: 3.8rem;
+      color: color($colors, background);
+    }
+  }
+  .line {
+    background-color: white;
+    width: 120%;
+    margin-left: -20px;
+    border: 0;
+    clear: both;
+    display: block;
+    height: 1px;
+  }
+  .address-container {
+  }
+
+  .map-container {
+    height: 200px;
+    margin-left: -20px;
+    width: 110%;
+    pointer-events: none;
+    position: relative;
+
+  }
+
+  .map-btn{
+    margin-top: -50px;
+    float: right;
+    width: 4rem;
+    height: 3.5rem;
+    background-color: color($colors, primary);
+    color:  color($colors, background);
+
+  }
+  .producer-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+
+    div img {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .producer-content {
+    text-align: center;
+    width: 33%;
+    p {
+      margin-top: 3px;
+      font-size: 12px;
+      font-weight: 300
+    }
+  }
+
+
+  .description-container p {
+    text-indent: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+
+  .modal{
+    z-index: 1000;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+}

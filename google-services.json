@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1020374440248",
+    "firebase_url": "https://artesa-152017.firebaseio.com",
+    "project_id": "artesa-152017",
+    "storage_bucket": "artesa-152017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020374440248:android:84ef762f1c76db06",
+        "android_client_info": {
+          "package_name": "com.rodrigodugin.malteria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020374440248-jiofb4spej3j4pasfdep6cujk8uhvfbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUgiz75GValqpHvEqXBh8H2vt6eeiec2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

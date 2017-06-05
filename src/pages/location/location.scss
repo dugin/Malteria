@@ -1,0 +1,55 @@
+page-location {
+
+    text-align: center;
+
+ .background {
+     background-image: linear-gradient(rgba(131,61,49, 0.5), rgba(131,61,49, 0.9)), url('../assets/img/beer-glasses.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+ background-position:center;
+  
+ }
+ h1{
+     font-size: 24px;
+     color: white;
+ }
+
+ h4{
+        font-size: 16px;
+        font-weight: 300;
+     color: lightgray;
+ }
+
+ h3 {
+     font-size: 18px;
+   
+     color: #f4d207;
+ }
+
+.spinner-crescent circle {
+    
+  width: 40px !important;
+  height: 40px !important;
+  stroke: #f4d207;
+  
+}
+
+.loader {
+  margin: auto;
+  position: relative;
+  padding-top: 8vh;
+ 
+}
+
+
+ ion-icon{
+     padding-top: 15vh;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    font-size: 25vw;
+    color: white;
+
+ }
+
+}

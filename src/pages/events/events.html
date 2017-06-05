@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+
+    <div class="logo-title">
+     <img class="logo-icon" src="assets/logo/beer-logo.svg" height="26px" width="auto" />
+      <img class="logo-icon" src="assets/logo/writing-logo.svg" height="12px" width="auto" />
+    </div>
+
+    <ion-buttons *ngIf="isLoggedIn" end>
+      <button (click)="presentOptions($event)" ion-button icon-only>
+        <ion-icon name="md-more" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="events">
+
+<div class="spinner">
+      <ion-spinner name="crescent" *ngIf="isLoading" ></ion-spinner>
+
+</div>
+
+
+<div *ngIf="isLoggedIn; else notLoggedIn">
+<ion-card *ngFor="let fbEvent of fbEvents" (click)="onEvent(fbEvent)">
+
+  <ion-item >
+
+    <ion-avatar item-left>
+      <img  [src]="getImgSanatized(fbEvent.owner.imgURL)">
+    </ion-avatar>
+      <div class="header-title">
+    <h2>{{fbEvent.name}}</h2>
+     <p>{{fbEvent.place.name}}</p>
+
+   </div>
+ <div class="header-day">
+       <p> {{fbEvent.date.date()}} {{fbEvent.date.format('MMM')}}</p>
+
+ </div>
+
+  </ion-item>
+
+      <img class="cover" [src]="getImgSanatized(fbEvent.coverURL)">
+
+  <ion-card-content>
+    <p class="desc">{{fbEvent.description}}</p>
+  </ion-card-content>
+
+  <div class="icons-container">
+    <div *ngIf="fbEvent.distance">
+      <button ion-button color="background" clear small icon-left>
+        <ion-icon name='walk'></ion-icon>
+       {{fbEvent.distance}} Km
+      </button>
+    </div>
+    <div >
+      <button class="time" ion-button color="background" clear small icon-left>
+        <ion-icon name='clock'></ion-icon>
+        {{   fbEvent.start_t   }} - {{  fbEvent.end_t}}
+      </button>
+    </div>
+
+    <div >
+      <button class="going" ion-button color="background" clear small icon-left>
+        <ion-icon name='thumbs-up'></ion-icon>
+        {{fbEvent.attending_count}} irão
+      </button>
+    </div>
+  </div>
+
+</ion-card>
+</div>
+
+  <ng-template #notLoggedIn>
+    <div class="not-logged">
+
+      <img src="assets/img/sad_beer.png"  height="60" width="60" alt="">
+    <p>Precisamos do login com o Facebook para mostrarmos os eventos.</p>
+
+
+    <button (click)="onLogin()" outline ion-button icon-left color="background" class="btn-facebook">
+      <ion-icon color="background" name="logo-facebook"></ion-icon>
+      <span  color="background">Login com o Facebook </span>
+    </button>
+    </div>
+  </ng-template>
+</ion-content>
